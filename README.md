@@ -80,7 +80,19 @@ _ Run the algorithm many times
 
 ### 1.13 Asymptotic Notation
 Having the expressions for the best, average and worst case, for all there case we need to identify
-the upper and lower bounds
+the upper and lower bounds.
+
+### 1.14 Big-O Notation
+This notation gives the tight upper bound of the given function.
+f(n) = O(g(n)).
+That means, at larger values of n, the upper bound of f(n) is g(n).
+
+Big-O Visualization
+No Uniqueness? there is no unique set of values for n0 and c is proving the asymptotic bounds.
+
+### 1.15 Omega- Notation
+Similar to the O discussion, this notation gives the tighter lower bound of the given algorithm, and we represent is
+f(n) = Ω(g(n))
 ## Question pre
 1. What is the rate of growth?
    That rate at which the running time increases as a function of input is calle *Rate of Growth*
@@ -92,6 +104,7 @@ the upper and lower bounds
    _ Average case.
    
 3. What is the big O notation?
+   Big-O notation is  gives the tight upper bound of the give function.
 4. Asymptotic analysis
 _ Total time of a loop?
 _ Total time of nested loop?
