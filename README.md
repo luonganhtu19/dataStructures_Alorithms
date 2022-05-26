@@ -93,6 +93,56 @@ No Uniqueness? there is no unique set of values for n0 and c is proving the asym
 ### 1.15 Omega- Notation
 Similar to the O discussion, this notation gives the tighter lower bound of the given algorithm, and we represent is
 f(n) = Ω(g(n))
+
+### 1.16 Theta-Θ Notation
+This notation decides whether the upper and lower bounds of a given function (algorithm) are the same.
+
+### 1.17 Important Notes
+_ For analysis(best case, worst case and average), we try to give the upper bound(O) and lower bound() and average running time ().
+
+### 1.18 Why is it called Asymptotic Analysis
+In mathematics, we call such a curve an asymptotic curve. In other terms, g(n) is the asymptotic
+curve for f(n). For this reason, we call algorithm analysis asymptotic analysis.
+
+### 1.19 Guidelines for Asymptotic Analysis
+1. Loops: The running time of a loop is, at most, the running time of the statements inside the loop multiplied by the number of iterations.
+Total time = a constant cxn = cn = O(n)
+2. Nested loops: Analyze from the inside out. Total running time is the product of the size of all the loops.
+total time = cxnxn = cn^2= O(n^2). 
+3. Consecutive statements: Add time complexities of each statement.
+4. If-then-else statements: Worst-case running time: the test, plus either the then part or else part.
+5. Logarithmic complexity: An algorithm is O(log(n)) if it takes a constant time to cut the problem size by a fraction (usually 1/2)
+### 1.20 Simplifying properties of asymptotic notations
+Transitivity: f(n)= Θ(g(n)) and  g(n) = Θ(h(n)) ⇒f(n) = Θ(h(n)).
+Reflexivity: f(n) =  Θ(f(n))
+Symmetry: f(n) = Θ(g(n))  if and only if g(n) = Θ(f(n))
+Transpose symmetry: f(n) = O(g(n)) if and only if g(n) = Ω(f(n)).
+If f(n) is in O(kg(n)) for any constant k > 0, then f(n) is in O(g(n))
+If f1(n) is in O((g1(n))) and f2(n) is in O(g2(n)), then (f1+f2)(n) is in O(max(g1(n)),g1(n)).
+If f1(n) iss in O((g1(n))) and f2(n) is in O(g2(n)) then (f1+f2)(n) is in O(max(g1(n)g1(n))).
+
+### 1.21 Commonly used Logarithms and Summations
+
+Logarithms:
+
+![img.png](img.png)
+
+Arithmetic series:
+
+![img_1.png](img_1.png)
+
+Geometric series
+
+![img_2.png](img_2.png)
+
+Harmonic series:
+
+![img_3.png](img_3.png)
+
+Other important formulae
+
+![img_4.png](img_4.png)
+
 ## Question pre
 1. What is the rate of growth?
    That rate at which the running time increases as a function of input is calle *Rate of Growth*
@@ -107,21 +157,31 @@ f(n) = Ω(g(n))
    Big-O notation is  gives the tight upper bound of the give function.
 4. Asymptotic analysis
 _ Total time of a loop?
+   The running time of a loop is, at most, the running time of the statements inside the loop multiplied by the number of iterations.
+
 _ Total time of nested loop?
-   Total time for consecutive statements?
-   Total time for if then else statement?
-5. Identify O(?)of the F(n) = 5n4 +3n2 + 2n2+4n +1
+   Analyze from the inside out. Total running time is the product of the size of all the loops.
+_ Total time for consecutive statements?
+   Add time complexities of each statement.
+_ Total time for if then else statement?
+   Worst-case running time: the test, plus either the then part or else part.
+5. Identify O(?)of the F(n) = 5n4 +3n^3 + 2n^2+4n +1
+O(n^4), c=6, n>2.
 6. ------------------- F(n) = 5n2 +3nlog(n)+ 2n +5
+O(n^2), c= 6, n>1.
 7. ------------------- F(n) = 3log(n) +2.
+O(log(n)), c= 3, n>1.
 8. Find the complexity of the function give blow.
    ````java
    int sum = 0
    for(int n = N;n>0;n/=2)
         for(int i=0; i<n;i++)
             sum++;
+   O(nlog(n)), c
 9. Find the complexity of the function give blow.
     ````java
    int sum = 0
    for(int n = 1;n<N;n*=2)
         for(int i=0; i<n;i++)
             sum++;
+   O(nlog(n))
