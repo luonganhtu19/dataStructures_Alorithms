@@ -185,3 +185,21 @@ O(log(n)), c= 3, n>1.
         for(int i=0; i<n;i++)
             sum++;
    O(nlog(n))
+   
+
+## 2.Sorting
+### 2.1 Classification of Sorting Algorithm 
+   Sorting algorithms are generally categorized based on the following parameters.
+#### By Number of comparisons    
+   Best case: O(nlog(n))
+   Wort case: O(n^2).
+#### By Number of Swaps
+#### By Memory Usage
+#### By stability
+#### By Adaptability
+#### Other Classification
+   Internal short
+   External short
+   
+#### 3. Linked list
+1. Singly Linked Lists
