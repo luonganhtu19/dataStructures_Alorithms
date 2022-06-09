@@ -303,3 +303,69 @@ Queue Implementation
 • Grows and shrinks gracefully.
 • Every operation takes constant time O(1).
 • Every operation uses extra space and time to deal with references.
+
+## Tree
+### What is tree
+Binary trees - Cây nhị phân là một cấu trúc trong đó mỗi nút(giao điểm) có thể có nhiều nhất hai nhánh con(hai giao điểm)
+Trong cây nhị phân, tồn tại một con dường dẫn duy nhất từ nút gốc đến mọi nút khác. Nút trên cùng của cây nhị phân được 
+được gọi là nút gốc hoặc nút cha và các nút đến từ nút gốc được gọi là nút con.
+Nhánh cuối gọi là nhánh lá.
+
+A tree is a data structure similar to a linked list but instead of each pointing simply to the next node linear fashion
+,each node point to a number of nodes.
+
+### Glossary
+![img_5.png](img_5.png)
+
+      Root of a tree: is the node with no parents.  (Just only one root in a tree)
+      An edge : refers to the link child.
+      Leaf node: A node with no children.
+      Siblings: Children(node) same parent.
+      Ancestor: a node 'p' is an ancestor of node 'q'. If the exists a path from root to q and p appears on the path
+      the node q is descendant of node p.
+      The level of the tree: set of all nodes  at  given depth. That root node is at the level zero.
+      The depth: is the length of the path from the root to the node.
+      The hight: is the length of the path from that node to the deepest node.
+      The hight of tree: is the maximum height among all the nodes in the tree and depth of the tree
+      Skew trees: every node in a tree has only one child (except leaf node).
+      Left shew tree: node has only left child
+      RIght skew tree: node has only right child
+   ![img_8.png](img_8.png)
+   
+### Binary Trees:
+![img_9.png](img_9.png)
+
+#### Type of Binary Trees:
+_ Strict Binary Tree: is each node has exactly two children or no children.
+_ Full Binary Tree: each node has exactly two children  and all leaf nodes at same level.
+_ Complete Binary Tree: Let us assume that th height of the binary tree is h.
+                        A binary tree is called complete  binary tree if all leaf node are at height h or h-1 and also 
+                        without any missing number in the sequence.
+
+#### Basic Operations 
+_ Insert an element into a tree.
+_ Deleting an element from a tree.
+_ Searching for an element.
+_ Traversing the tree.
+
+#### Auxiliary Operations
+_ Finding the size of the tree.
+_ Finding the height of the tree.
+_ Finding the level which has maximum sum.
+_ Finding the least common ancestor(LCA) for a given pair of nodes, and many more.
+
+#### InOrder Traversal
+In Inorder traversal the root is visited between the subtrees. Inorder traversal is defined as follows:
+_ Traverse the left subtree in Inorder.
+_ Visit the root.
+_ Traverse the right subtree inorder.
+
+![img_11.png](img_11.png)
+A → B → D → E → C → F → G
+#### Expression tree.
+A tree representing an expression is called an expression tree. In expression trees, leaf nodes are operands and non-leaf 
+nodes are operators
+![img_10.png](img_10.png)
+
+Cách hoạt động
+![img_12.png](img_12.png)

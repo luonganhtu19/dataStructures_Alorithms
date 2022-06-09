@@ -7,6 +7,14 @@ public class LinkedListDemo {
         String item;
         Node next;
         Node prev;
+        Node(Node prev, String element, Node next){
+            this.item = element;
+            this.next = next;
+            this.prev = prev;
+        }
+        Node(){
+
+        }
     }
 
     Node head;
@@ -24,11 +32,7 @@ public class LinkedListDemo {
 
 
     public boolean isEmpty() {
-        if (this.head!=null){
-         return false;
-        }else {
-            return true;
-        }
+        return this.head == null;
     }
 
     public Node getFirst() {
@@ -41,16 +45,16 @@ public class LinkedListDemo {
 
     public void addFirst(String item) {
         Node tmpNode = new Node();
-        if (head==null){
-            tmpNode.item = item;
-            this.head = tmpNode;
-            this.tail = tmpNode;
-        }else {
+        if (head != null) {
             tmpNode = this.head;
             this.head = new Node();
             this.head.item = item;
             this.head.next = tmpNode;
             this.head.next.prev = this.head;
+        } else {
+            tmpNode.item = item;
+            this.head = tmpNode;
+            this.tail = tmpNode;
         }
     }
 
