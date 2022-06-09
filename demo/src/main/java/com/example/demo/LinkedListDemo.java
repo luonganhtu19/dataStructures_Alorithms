@@ -13,7 +13,6 @@ public class LinkedListDemo {
             this.prev = prev;
         }
         Node(){
-
         }
     }
 

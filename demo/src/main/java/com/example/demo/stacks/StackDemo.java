@@ -113,15 +113,15 @@ public class StackDemo {
 //        stackDemo.push(4);
 //        stackDemo.push(5);
         stackDemo.pop();
-        stackDemo.push(6);
-        stackDemo.print();
-        System.out.println(stackDemo.size());
-        System.out.println(stackDemo.isFull());
-        stackDemo.push(5);
-
-        stackDemo.pop();
-        stackDemo.print();
-        System.out.println(stackDemo.size());
+//        stackDemo.push(6);
+//        stackDemo.print();
+//        System.out.println(stackDemo.size());
+//        System.out.println(stackDemo.isFull());
+//        stackDemo.push(5);
+//
+//        stackDemo.pop();
+//        stackDemo.print();
+//        System.out.println(stackDemo.size());
     }
 }
 
